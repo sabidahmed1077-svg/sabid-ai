@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SABID AI</title>
+<style>
+:root{--bg:#050914;--card:#0b1220;--line:#1d4ed8;--text:#f8fafc;--muted:#93c5fd;--glow:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 0,#10204a 0,#050914 45%);color:var(--text);font-family:Arial,sans-serif;min-height:100vh}
+.wrap{max-width:820px;margin:auto;padding:28px 18px 45px}.hero{text-align:center}.avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid #3b82f6;box-shadow:0 0 35px #2563eb88}.title{font-size:34px;font-weight:800;letter-spacing:3px;margin:15px 0 5px}.tag{color:var(--muted);margin-bottom:22px}.ai{display:block;width:100%;padding:17px;border-radius:16px;background:#1d4ed8;color:#fff;text-decoration:none;font-weight:700;font-size:18px;box-shadow:0 0 25px #2563eb66;margin-bottom:12px;border:0;cursor:pointer}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.btn{display:block;text-align:center;padding:15px;border:1px solid #2563eb88;border-radius:14px;background:#0b1220;color:#fff;text-decoration:none}.card{margin-top:18px;background:#0b1220cc;border:1px solid #1e3a8a;border-radius:18px;padding:20px}.card h2{margin:0 0 12px}.muted{color:#bfdbfe}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid #1e40af}footer{text-align:center;color:#60a5fa;margin-top:28px;font-size:13px}@media(max-width:600px){.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery img{height:260px}.title{font-size:28px}}
+</style>
+</head>
+<body><main class="wrap">
+<section class="hero"><img class="avatar" src="56866d1a-ee38-4833-8f79-45ef3bcb6e2c.jpg" alt="Sabid"><div class="title">SABID AI</div><div class="tag">Student • Entrepreneur • Technology</div>
+<button class="ai" onclick="startVoice()">🎤 Talk to SABID AI</button></section>
+<section class="grid">
+<a class="btn" href="https://www.facebook.com/SabidAhmed104103/" target="_blank">Facebook</a>
+<a class="btn" href="https://wa.me/8801313261351" target="_blank">WhatsApp</a>
+<a class="btn" href="https://www.instagram.com/sabid__11_j/?hl=en" target="_blank">Instagram</a>
+<a class="btn" href="mailto:sabidahmed1077@gmail.com">Gmail</a>
+</section>
+<section class="card"><h2>About Me</h2><p><b>Name:</b> Sabid Ahmed</p><p><b>School:</b> Jan-E-Alam Sarker High School</p><p><b>College:</b> Uttara Govt. College</p><p><b>Work:</b> Beauty Clinic Skin Care Expert</p></section>
+<section class="card"><h2>Gallery</h2><div class="gallery"><img src="43b45caf-e976-48e7-a922-ba369b63a224.jpg"><img src="56866d1a-ee38-4833-8f79-45ef3bcb6e2c.jpg"><img src="0769e5cb-477d-4fe2-9f65-02061dd0615f.jpg"></div></section>
+<footer>Welcome, Sabid • SABID AI v1.0</footer></main>
+<script>function startVoice(){if(!('webkitSpeechRecognition'in window||'SpeechRecognition'in window)){alert('Voice input is not supported in this browser.');return}const R=window.SpeechRecognition||window.webkitSpeechRecognition;const r=new R();r.lang='en-US';r.interimResults=false;r.onresult=e=>alert('You said: '+e.results[0][0].transcript+'\n\nNext version can connect this voice input to an AI service.');r.start()}</script>
+</body></html>
